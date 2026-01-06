@@ -1,0 +1,10 @@
+^C:\USERS\MARCUS\DOCUMENTS\CODE PROJECTS\C++\RPG GAME EXPERIMENT\BUILD\CMAKEFILES\BDE9A62526F8F28253400635267CCAE3\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/Marcus/Documents/Code Projects/c++/RPG Game Experiment" "-BC:/Users/Marcus/Documents/Code Projects/c++/RPG Game Experiment/build" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "C:/Users/Marcus/Documents/Code Projects/c++/RPG Game Experiment/build/RPGExperiment.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
